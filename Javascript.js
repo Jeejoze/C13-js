@@ -12,7 +12,7 @@ btncorrect.disabled = true;
 btnlow.disabled = true;
 textCount.textContent = `Count : ${countnum}`;
 function IsStart(a) {
-    if (btn1.textContent == "Start?") {
+    if (!btn1.disabled) {
         btn1.textContent = "You are playing";
         btn1.disabled = true;
         textCount.textContent = `Count : ${countnum}`;
@@ -22,23 +22,23 @@ function IsStart(a) {
         btncorrect.disabled = false;
         btnlow.disabled = false;
     }
-    switch (a) {
-        case 1:
-            break;
-        case 2:
-            btn1.disabled = false;
-            countnum = 0;
-            break;
-        case 3:
-            break;
+    else {
+        switch (a) {
+            case 1:
+                break;
+            case 2:
+                btn1.disabled = false;
+                countnum = 0;
+                break;
+            case 3:
+                break;
+        }
     }
-
-
 }
 function IsPlaying() {
 
 }
 btn1.addEventListener("click", IsStart(0));
-btnhigh.addEventListener("click",IsStart(1));
-btncorrect.addEventListener("click",IsStart(2));
-btnlow.addEventListener("click",IsStart(3));
+btnhigh.addEventListener("click", IsStart(1));
+btncorrect.addEventListener("click", IsStart(2));
+btnlow.addEventListener("click", IsStart(3));
