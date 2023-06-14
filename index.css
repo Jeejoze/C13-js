@@ -1,0 +1,22 @@
+.mainro
+{
+     background-color: aqua;
+     border-radius: 30px;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     font-family: 'Courier New', Courier, monospace;
+}
+.mainro img
+{
+    width: 300px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+#flex1
+{
+    border: 3px solid rebeccapurple;
+    width: 80%;
+    height: 200px;
+}
