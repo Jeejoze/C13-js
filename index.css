@@ -20,3 +20,23 @@ h1{
     width: 80%;
     height: 200px;
 }
+#flex1 button
+{
+  width: 100%;
+  height: 20%;
+  background-color: green;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+}
+#boxes1 button
+{
+  width: 30%;
+  height: 60px;
+  background-color: black;
+}
+#boxes1
+{
+    display: flex;
+    justify-content: space-between;
+}
