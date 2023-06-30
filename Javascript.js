@@ -18,7 +18,7 @@ function IsStart(a) {
         btn1.textContent = "You are playing";
         btn1.disabled = true;
         textCount.textContent = `Count : ${countnum}`;
-         ran = ranmax / 2;
+        ran = ranmax / 2;
         textshow.textContent = `RandomNumber is : ${ran}`;
         btnhigh.disabled = false;
         btncorrect.disabled = false;
@@ -30,15 +30,15 @@ function IsStart(a) {
                 countnum += 1;
                 ranmax = ran;
                 ran = Math.floor((ranmax + ranmin) / 2);
-                ranmin = ran;
                 textCount.textContent = `Count : ${countnum}`;
                 textshow.textContent = `RandomNumber is : ${ran}`;
                 break;
             case 2:
                 btn1.disabled = false;
-                countnum = 0;
-                ran = 50;
-                textshow.textContent = `RandomNumber is : ${ran}`;
+                btn1.textContent = "Start";
+                btnhigh.disabled = true;
+                btncorrect.disabled = true;
+                btnlow.disabled = true;
                 break;
             case 3:
                 ranmin = ran;
